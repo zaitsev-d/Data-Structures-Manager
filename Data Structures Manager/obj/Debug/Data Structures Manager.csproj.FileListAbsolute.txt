@@ -1,0 +1,7 @@
+D:\Workspace\C#\Data Structures Manager\Data Structures Manager\bin\Debug\Data Structures Manager.exe.config
+D:\Workspace\C#\Data Structures Manager\Data Structures Manager\bin\Debug\Data Structures Manager.exe
+D:\Workspace\C#\Data Structures Manager\Data Structures Manager\bin\Debug\Data Structures Manager.pdb
+D:\Workspace\C#\Data Structures Manager\Data Structures Manager\obj\Debug\Data Structures Manager.csprojAssemblyReference.cache
+D:\Workspace\C#\Data Structures Manager\Data Structures Manager\obj\Debug\Data Structures Manager.csproj.CoreCompileInputs.cache
+D:\Workspace\C#\Data Structures Manager\Data Structures Manager\obj\Debug\Data Structures Manager.exe
+D:\Workspace\C#\Data Structures Manager\Data Structures Manager\obj\Debug\Data Structures Manager.pdb
