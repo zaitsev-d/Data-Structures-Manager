@@ -43,14 +43,19 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Deque\Deque.cs" />
+    <Compile Include="Deque\Item.cs" />
     <Compile Include="Duplex Linked List\Item.cs" />
     <Compile Include="Duplex Linked List\DuplexLinkedList.cs" />
     <Compile Include="Linked List\Item.cs" />
     <Compile Include="Linked List\LinkedList.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Ring List\Item.cs" />
-    <Compile Include="Ring List\CircularLinkedList.cs" />
+    <Compile Include="Queue\ArrayQueue.cs" />
+    <Compile Include="Queue\Item.cs" />
+    <Compile Include="Queue\Queue.cs" />
+    <Compile Include="Circular Linked List\Item.cs" />
+    <Compile Include="Circular Linked List\CircularLinkedList.cs" />
     <Compile Include="Stack\ArrayStack.cs" />
     <Compile Include="Stack\Item.cs" />
     <Compile Include="Stack\Stack.cs" />
@@ -59,11 +64,8 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Binary Heap\" />
-    <Folder Include="Deque\" />
     <Folder Include="Dictionary\" />
     <Folder Include="Map\" />
-    <Folder Include="Queue\" />
     <Folder Include="Set\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
