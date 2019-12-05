@@ -56,6 +56,7 @@
     <Compile Include="Queue\Queue.cs" />
     <Compile Include="Circular Linked List\Item.cs" />
     <Compile Include="Circular Linked List\CircularLinkedList.cs" />
+    <Compile Include="Set\LiteSet.cs" />
     <Compile Include="Stack\ArrayStack.cs" />
     <Compile Include="Stack\Item.cs" />
     <Compile Include="Stack\Stack.cs" />
@@ -66,7 +67,6 @@
   <ItemGroup>
     <Folder Include="Dictionary\" />
     <Folder Include="Map\" />
-    <Folder Include="Set\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

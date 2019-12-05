@@ -2,6 +2,7 @@
 using Ring_List.Model;
 using Stack.Model;
 using Queue.Model;
+using Set.Model;
 using System;
 using System.Collections.Generic;
 
@@ -11,45 +12,56 @@ namespace Data_Structures_Manager
     {
         static void Main(string[] args)
         {
-            var queue = new Queue.Model.Queue<int>();
-            queue.Enqueue(1);
-            queue.Enqueue(2);
-            queue.Enqueue(3);
-            queue.Enqueue(4);
-            queue.Enqueue(5);
+            var set1 = new LiteSet<int>(new int[] { 1, 2, 3, 4, 5 });
+            var set2 = new LiteSet<int>(new int[] { 4, 5, 6, 7, 8});
+            var set3 = new LiteSet<int>(new int[] { 3, 4, 5 });
 
-            Console.WriteLine(queue.Dequeue());
-            Console.WriteLine(queue.Peek());
-            Console.WriteLine(queue.Dequeue());
-            Console.WriteLine(queue.Dequeue());
-            Console.WriteLine(queue.Dequeue());
-
+            Console.WriteLine("Union: ");
+            foreach(var item in set1.Union(set2))
+            {
+                Console.Write(item + " ");
+            }
             Console.WriteLine();
 
-            var arrayQueue = new ArrayQueue<int>(10);
-            arrayQueue.Enqueue(1);
-            arrayQueue.Enqueue(2);
-            arrayQueue.Enqueue(3);
-            arrayQueue.Enqueue(4);
-            arrayQueue.Enqueue(5);
-
-            Console.WriteLine(arrayQueue.Dequeue());
-            Console.WriteLine(arrayQueue.Peek());
-            Console.WriteLine(arrayQueue.Dequeue());
-
+            Console.WriteLine("Intersection: ");
+            foreach (var item in set1.Intersection(set2))
+            {
+                Console.Write(item + " ");
+            }
             Console.WriteLine();
 
-            var deque = new Deque.Model.Deque<int>();
-            deque.PushFront(1);
-            deque.PushFront(2);
-            deque.PushFront(3);
-            deque.PushBack(4);
-            deque.PushBack(5);
+            Console.WriteLine("Difference A \\ B: ");
+            foreach (var item in set1.Difference(set2))
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
 
-            Console.WriteLine(deque.PopFront());
-            Console.WriteLine(deque.PopFront());
-            Console.WriteLine(deque.PopBack());
-            Console.WriteLine(deque.PopBack());
+            Console.WriteLine("Difference B \\ A: ");
+            foreach (var item in set2.Difference(set1))
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
+            Console.WriteLine("A Subset C: ");
+            Console.Write(set1.Subset(set3));
+            Console.WriteLine();
+
+            Console.WriteLine("C Subset A: ");
+            Console.Write(set3.Subset(set1));
+            Console.WriteLine();
+
+            Console.WriteLine("C Subset B: ");
+            Console.Write(set3.Subset(set2));
+            Console.WriteLine();
+
+            Console.WriteLine("Symmetric Difference: ");
+            foreach (var item in set1.SymmetricDifference(set2))
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
 
             Console.ReadKey();
         }
