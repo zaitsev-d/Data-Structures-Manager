@@ -3,6 +3,7 @@ using Ring_List.Model;
 using Stack.Model;
 using Queue.Model;
 using Set.Model;
+using HashTable.Model;
 using System;
 using System.Collections.Generic;
 
@@ -12,7 +13,7 @@ namespace Data_Structures_Manager
     {
         static void Main(string[] args)
         {
-            var set1 = new LiteSet<int>(new int[] { 1, 2, 3, 4, 5 });
+            /*var set1 = new LiteSet<int>(new int[] { 1, 2, 3, 4, 5 });
             var set2 = new LiteSet<int>(new int[] { 4, 5, 6, 7, 8});
             var set3 = new LiteSet<int>(new int[] { 3, 4, 5 });
 
@@ -61,7 +62,18 @@ namespace Data_Structures_Manager
             {
                 Console.Write(item + " ");
             }
-            Console.WriteLine();
+            Console.WriteLine();*/
+
+            var hashTable = new HashTable<int>(100);
+            hashTable.Add(100);
+            hashTable.Add(77);
+            hashTable.Add(3);
+            hashTable.Add(5558);
+            hashTable.Add(111);
+
+            Console.WriteLine(hashTable.Search(111));
+            Console.WriteLine(hashTable.Search(5558));
+            Console.WriteLine(hashTable.Search(101));
 
             Console.ReadKey();
         }

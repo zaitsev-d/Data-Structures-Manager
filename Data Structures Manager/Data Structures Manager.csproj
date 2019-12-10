@@ -47,6 +47,8 @@
     <Compile Include="Deque\Item.cs" />
     <Compile Include="Duplex Linked List\Item.cs" />
     <Compile Include="Duplex Linked List\DuplexLinkedList.cs" />
+    <Compile Include="Hash Table\HashTable.cs" />
+    <Compile Include="Hash Table\Item.cs" />
     <Compile Include="Linked List\Item.cs" />
     <Compile Include="Linked List\LinkedList.cs" />
     <Compile Include="Program.cs" />
