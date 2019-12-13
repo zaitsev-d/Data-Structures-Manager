@@ -45,6 +45,8 @@
   <ItemGroup>
     <Compile Include="Deque\Deque.cs" />
     <Compile Include="Deque\Item.cs" />
+    <Compile Include="Dictionary\Dictionary.cs" />
+    <Compile Include="Dictionary\Item.cs" />
     <Compile Include="Duplex Linked List\Item.cs" />
     <Compile Include="Duplex Linked List\DuplexLinkedList.cs" />
     <Compile Include="Hash Table\HashTable.cs" />
@@ -66,9 +68,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Dictionary\" />
-    <Folder Include="Map\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

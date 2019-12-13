@@ -4,6 +4,7 @@ using Stack.Model;
 using Queue.Model;
 using Set.Model;
 using HashTable.Model;
+using Dictionary.Model;
 using System;
 using System.Collections.Generic;
 
@@ -64,16 +65,36 @@ namespace Data_Structures_Manager
             }
             Console.WriteLine();*/
 
-            var hashTable = new HashTable<int>(100);
-            hashTable.Add(100);
-            hashTable.Add(77);
-            hashTable.Add(3);
-            hashTable.Add(5558);
-            hashTable.Add(111);
+            var dictionary = new Dictionary.Model.Dictionary<int, string>();
+            dictionary.Add(new Item<int, string>(1, "One"));
+            dictionary.Add(new Item<int, string>(1, "One"));
+            dictionary.Add(new Item<int, string>(2, "Two"));
+            dictionary.Add(new Item<int, string>(3, "Three"));
+            dictionary.Add(new Item<int, string>(4, "Four"));
+            dictionary.Add(new Item<int, string>(5, "Five"));
+            dictionary.Add(new Item<int, string>(101, "One Hundred One"));
 
-            Console.WriteLine(hashTable.Search(111));
-            Console.WriteLine(hashTable.Search(5558));
-            Console.WriteLine(hashTable.Search(101));
+            foreach (var item in dictionary)
+            {
+                Console.WriteLine(item);
+            }
+            Console.WriteLine();
+
+            Console.WriteLine(dictionary.Search(7) ?? "Not found.");
+            Console.WriteLine(dictionary.Search(3) ?? "Not found.");
+            Console.WriteLine(dictionary.Search(101) ?? "Not found.");
+
+            Console.WriteLine();
+
+            dictionary.Remove(7);
+            dictionary.Remove(3);
+            dictionary.Remove(1);
+            dictionary.Remove(101);
+
+            foreach (var item in dictionary)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
         }
