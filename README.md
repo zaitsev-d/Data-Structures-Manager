@@ -1,2 +1,2 @@
-# Data-Structures-Manager.CMD
+# Data-Structures-Manager
  Various data structures in the programming.
