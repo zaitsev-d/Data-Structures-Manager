@@ -7,6 +7,7 @@ using HashTable.Model;
 using Dictionary.Model;
 using System;
 using System.Collections.Generic;
+using Binary_Search_Tree.Model;
 
 namespace Data_Structures_Manager
 {
@@ -65,7 +66,7 @@ namespace Data_Structures_Manager
             }
             Console.WriteLine();*/
 
-            var dictionary = new Dictionary.Model.Dictionary<int, string>();
+            /*var dictionary = new Dictionary.Model.Dictionary<int, string>();
             dictionary.Add(new Item<int, string>(1, "One"));
             dictionary.Add(new Item<int, string>(1, "One"));
             dictionary.Add(new Item<int, string>(2, "Two"));
@@ -94,7 +95,39 @@ namespace Data_Structures_Manager
             foreach (var item in dictionary)
             {
                 Console.WriteLine(item);
+            }*/
+
+            var tree = new Tree<int>();
+            tree.Add(5);
+            tree.Add(3);
+            tree.Add(7);
+            tree.Add(1);
+            tree.Add(2);
+            tree.Add(8);
+            tree.Add(6);
+            tree.Add(9);
+            tree.Add(4);
+
+            Console.Write("Preorder: ");
+            foreach(var item in tree.Preorder())
+            {
+                Console.Write(item + " ");
             }
+            Console.WriteLine();
+
+            Console.Write("Postorder: ");
+            foreach (var item in tree.Postorder())
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
+
+            Console.Write("Inorder: ");
+            foreach (var item in tree.Inorder())
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
 
             Console.ReadKey();
         }

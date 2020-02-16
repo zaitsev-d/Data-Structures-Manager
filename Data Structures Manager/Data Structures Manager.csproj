@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Binary Search Tree\Node.cs" />
+    <Compile Include="Binary Search Tree\Tree.cs" />
     <Compile Include="Deque\Deque.cs" />
     <Compile Include="Deque\Item.cs" />
     <Compile Include="Dictionary\Dictionary.cs" />

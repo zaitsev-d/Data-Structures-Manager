@@ -11,3 +11,9 @@ D:\Workspace\GitHub\Data-Structures-Manager.CMD\Data Structures Manager\bin\Debu
 D:\Workspace\GitHub\Data-Structures-Manager.CMD\Data Structures Manager\obj\Debug\Data Structures Manager.csprojAssemblyReference.cache
 D:\Workspace\GitHub\Data-Structures-Manager.CMD\Data Structures Manager\obj\Debug\Data Structures Manager.exe
 D:\Workspace\GitHub\Data-Structures-Manager.CMD\Data Structures Manager\obj\Debug\Data Structures Manager.pdb
+D:\Workspace\GitHub\Data-Structures-Manager\Data Structures Manager\bin\Debug\Data Structures Manager.exe.config
+D:\Workspace\GitHub\Data-Structures-Manager\Data Structures Manager\bin\Debug\Data Structures Manager.exe
+D:\Workspace\GitHub\Data-Structures-Manager\Data Structures Manager\bin\Debug\Data Structures Manager.pdb
+D:\Workspace\GitHub\Data-Structures-Manager\Data Structures Manager\obj\Debug\Data Structures Manager.csprojAssemblyReference.cache
+D:\Workspace\GitHub\Data-Structures-Manager\Data Structures Manager\obj\Debug\Data Structures Manager.exe
+D:\Workspace\GitHub\Data-Structures-Manager\Data Structures Manager\obj\Debug\Data Structures Manager.pdb
