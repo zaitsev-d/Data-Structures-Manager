@@ -5,6 +5,7 @@ using Queue.Model;
 using Set.Model;
 using HashTable.Model;
 using Dictionary.Model;
+using Trie.Model;
 using System;
 using System.Collections.Generic;
 using Binary_Search_Tree.Model;
@@ -64,9 +65,9 @@ namespace Data_Structures_Manager
             {
                 Console.Write(item + " ");
             }
-            Console.WriteLine();*/
+            Console.WriteLine();
 
-            /*var dictionary = new Dictionary.Model.Dictionary<int, string>();
+            var dictionary = new Dictionary.Model.Dictionary<int, string>();
             dictionary.Add(new Item<int, string>(1, "One"));
             dictionary.Add(new Item<int, string>(1, "One"));
             dictionary.Add(new Item<int, string>(2, "Two"));
@@ -95,7 +96,7 @@ namespace Data_Structures_Manager
             foreach (var item in dictionary)
             {
                 Console.WriteLine(item);
-            }*/
+            }
 
             var tree = new Tree<int>();
             tree.Add(5);
@@ -127,9 +128,30 @@ namespace Data_Structures_Manager
             {
                 Console.Write(item + " ");
             }
-            Console.WriteLine();
+            Console.WriteLine();*/
+
+            var trie = new Trie<int>();
+            trie.Add("hello", 50);
+            trie.Add("world", 100);
+            trie.Add("hell", 200);
+
+            trie.Remove("hell");
+            Search(trie, "hell");
 
             Console.ReadKey();
+        }
+
+        private static void Search(Trie<int> trie, string word)
+        {
+            if (trie.TrySearch(word, out int value))
+            {
+                Console.WriteLine(word + " " + value);
+            }
+            else
+            {
+                Console.WriteLine(word + "wasn't found.");
+            }
+
         }
     }
 }

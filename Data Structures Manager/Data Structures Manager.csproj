@@ -66,6 +66,8 @@
     <Compile Include="Stack\ArrayStack.cs" />
     <Compile Include="Stack\Item.cs" />
     <Compile Include="Stack\Stack.cs" />
+    <Compile Include="Trie\Node.cs" />
+    <Compile Include="Trie\Trie.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
