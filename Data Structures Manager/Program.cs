@@ -6,6 +6,7 @@ using Set.Model;
 using HashTable.Model;
 using Dictionary.Model;
 using Trie.Model;
+using Binary_Heap.Model;
 using System;
 using System.Collections.Generic;
 using Binary_Search_Tree.Model;
@@ -130,13 +131,29 @@ namespace Data_Structures_Manager
             }
             Console.WriteLine();*/
 
-            var trie = new Trie<int>();
+            /*var trie = new Trie<int>();
             trie.Add("hello", 50);
             trie.Add("world", 100);
             trie.Add("hell", 200);
 
             trie.Remove("hell");
-            Search(trie, "hell");
+            Search(trie, "hell");*/
+
+            var list = new List<int>();
+            list.Add(20);
+            list.Add(11);
+            list.Add(7);
+            list.Add(4);
+            list.Add(13);
+            list.Add(15);
+            list.Add(14);
+
+            var heap = new Heap(list);
+
+            foreach (var item in heap)
+            {
+                Console.WriteLine(item);
+            }
 
             Console.ReadKey();
         }

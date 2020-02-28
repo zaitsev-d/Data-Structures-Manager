@@ -5,7 +5,6 @@ namespace Linked_List.Model
     public class Item<T>
     {
         private T data = default(T);
-        private Item<T> next = null;
 
         public T Data
         {
