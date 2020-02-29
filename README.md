@@ -5,10 +5,14 @@
 * User Interface: CMD.
 * NET Framework Version: 4.7.2.
 
-Commit History:
-1. Linked List, Duplex Linked List, Ring List.
+Project Content:
+1. Linked List, Duplex Linked List, Circular List.
 2. Stack.
 3. Queue and Deque.
 4. Set.
 5. Hash Table.
 6. Dictionary.
+7. Binary Search Tree
+8. Trie
+9. Binary Heap
+10. Graph
