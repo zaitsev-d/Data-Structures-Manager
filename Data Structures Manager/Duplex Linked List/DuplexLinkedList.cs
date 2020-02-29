@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace DuplexLinkedList.Model
+namespace DuplexLinkedList.Structure
 {
     public class DuplexLinkedList<T>: IEnumerable<T>
     {

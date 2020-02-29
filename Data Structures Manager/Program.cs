@@ -1,15 +1,17 @@
-﻿using DuplexLinkedList.Model;
-using Ring_List.Model;
-using Stack.Model;
-using Queue.Model;
-using Set.Model;
-using HashTable.Model;
-using Dictionary.Model;
-using Trie.Model;
-using Binary_Heap.Model;
-using System;
+﻿using System;
 using System.Collections.Generic;
-using Binary_Search_Tree.Model;
+
+using DuplexLinkedList.Structure;
+using Circular_List.Structure;
+using Stack.Structure;
+using Queue.Structure;
+using Set.Structure;
+using HashTable.Structure;
+using Dictionary.Structure;
+using Trie.Structure;
+using Binary_Heap.Structure;
+using Binary_Search_Tree.Structure;
+using Graphs.Structure;
 
 namespace Data_Structures_Manager
 {
@@ -139,7 +141,7 @@ namespace Data_Structures_Manager
             trie.Remove("hell");
             Search(trie, "hell");*/
 
-            var list = new List<int>();
+            /*var list = new List<int>();
             list.Add(20);
             list.Add(11);
             list.Add(7);
@@ -153,9 +155,78 @@ namespace Data_Structures_Manager
             foreach (var item in heap)
             {
                 Console.WriteLine(item);
-            }
+            }*/
+
+            var graph = new Graph();
+            var v1 = new Vertex(1);
+            var v2 = new Vertex(2);
+            var v3 = new Vertex(3);
+            var v4 = new Vertex(4);
+            var v5 = new Vertex(5);
+            var v6 = new Vertex(6);
+            var v7 = new Vertex(7);
+
+            graph.Add_Vertex(v1);
+            graph.Add_Vertex(v2);
+            graph.Add_Vertex(v3);
+            graph.Add_Vertex(v4);
+            graph.Add_Vertex(v5);
+            graph.Add_Vertex(v6);
+            graph.Add_Vertex(v7);
+
+            graph.Add_Edge(v1, v2);
+            graph.Add_Edge(v1, v3);
+            graph.Add_Edge(v3, v4);
+            graph.Add_Edge(v2, v5);
+            graph.Add_Edge(v2, v6);
+            graph.Add_Edge(v6, v5);
+            graph.Add_Edge(v5, v6);
+
+            GetMatrix(graph);
+            Console.WriteLine("\n");
+
+            Console.WriteLine("L I S T:\n");
+            Getvertex(graph, v1);
+            Getvertex(graph, v2);
+            Getvertex(graph, v3);
+            Getvertex(graph, v4);
+            Getvertex(graph, v5);
+            Getvertex(graph, v6);
+            Getvertex(graph, v7);
 
             Console.ReadKey();
+        }
+
+        private static void GetMatrix(Graph graph)
+        {
+            var matrix = graph.GetMatrix();
+
+            Console.WriteLine("M A T R I X:\n");
+            for (int i = 0; i < graph.VertexCount; i++)
+            {
+                Console.Write($"    {i + 1}  ");
+            }
+            Console.WriteLine();
+
+            for (int i = 0; i < graph.VertexCount; i++)
+            {
+                Console.Write(i + 1);
+                for (int j = 0; j < graph.EdgeCount; j++)
+                {
+                    Console.Write(" | " + matrix[i, j] + " | ");
+                }
+                Console.WriteLine();
+            }
+        }
+
+        private static void Getvertex(Graph graph, Vertex vertex)
+        {
+            Console.Write(vertex.Number + ": ");
+            foreach (var v in graph.GetVertexList(vertex))
+            {
+                Console.Write(v.Number + ", ");
+            }
+            Console.WriteLine();
         }
 
         private static void Search(Trie<int> trie, string word)

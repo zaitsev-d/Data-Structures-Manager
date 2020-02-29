@@ -1,4 +1,4 @@
-﻿namespace Stack.Model
+﻿namespace Stack.Structure
 {
     public class Item<T>
     {

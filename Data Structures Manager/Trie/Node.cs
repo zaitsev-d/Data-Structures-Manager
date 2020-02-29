@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Trie.Model
+namespace Trie.Structure
 {
     class Node<T>
     {

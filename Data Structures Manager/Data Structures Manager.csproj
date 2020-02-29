@@ -52,6 +52,9 @@
     <Compile Include="Dictionary\Item.cs" />
     <Compile Include="Duplex Linked List\Item.cs" />
     <Compile Include="Duplex Linked List\DuplexLinkedList.cs" />
+    <Compile Include="Graph\Edge.cs" />
+    <Compile Include="Graph\Graph.cs" />
+    <Compile Include="Graph\Vertex.cs" />
     <Compile Include="Hash Table\HashTable.cs" />
     <Compile Include="Hash Table\Item.cs" />
     <Compile Include="Linked List\Item.cs" />

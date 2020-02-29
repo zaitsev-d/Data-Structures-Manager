@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 
-namespace Binary_Heap.Model
+namespace Binary_Heap.Structure
 {
     class Heap : IEnumerable
     {

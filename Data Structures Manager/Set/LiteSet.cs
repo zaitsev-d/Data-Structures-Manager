@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Set.Model
+namespace Set.Structure
 {
     public class LiteSet<T> : IEnumerable
     {

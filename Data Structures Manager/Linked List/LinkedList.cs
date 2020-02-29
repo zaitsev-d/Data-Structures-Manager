@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace Linked_List.Model
+namespace Linked_List.Structure
 {
     public class LinkedList<T> : IEnumerable
     {

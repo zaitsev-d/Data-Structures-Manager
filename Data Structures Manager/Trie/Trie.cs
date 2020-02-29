@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Trie.Model
+namespace Trie.Structure
 {
     public class Trie<T>
     {

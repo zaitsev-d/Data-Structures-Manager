@@ -1,4 +1,4 @@
-﻿namespace DuplexLinkedList.Model
+﻿namespace DuplexLinkedList.Structure
 {
     public class Item<T>
     {

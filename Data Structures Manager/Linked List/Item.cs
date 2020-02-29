@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Linked_List.Model
+namespace Linked_List.Structure
 {
     public class Item<T>
     {

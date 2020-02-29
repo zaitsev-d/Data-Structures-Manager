@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Stack.Model
+namespace Stack.Structure
 {
     public class Stack<T>
     {

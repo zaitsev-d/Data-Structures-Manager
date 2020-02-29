@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Binary_Search_Tree.Model
+namespace Binary_Search_Tree.Structure
 {
     class Tree<T>
         where T: IComparable, IComparable<T>
